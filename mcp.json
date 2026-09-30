@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "diamond-painting-converter": {
+      "type": "streamable-http",
+      "url": "https://diamondpaintingconverter.com/mcp"
+    }
+  }
+}

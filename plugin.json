@@ -1,0 +1,45 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "diamond-painting-converter",
+  "version": "1.0.0",
+  "description": "Find diamond painting patterns already purchased and linked to your account. Check the fixed dimensions, confirm the render and download the pattern PDF with a DMC color legend. The plugin does not purchase products, change designs or process payments.",
+  "author": {
+    "name": "Samautomation",
+    "url": "https://diamondpaintingconverter.com",
+    "email": "support@diamondpaintingconverter.com"
+  },
+  "homepage": "https://diamondpaintingconverter.com/plugin/",
+  "repository": "https://github.com/smrht/diamondpaintingconverter-agent-plugin",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Diamond Painting Converter",
+        "shortDescription": "Download purchased patterns",
+        "longDescription": "Find diamond painting patterns already purchased and linked to your account. Check the fixed dimensions, confirm the render and download the pattern PDF with a DMC color legend. The plugin does not purchase products, change designs or process payments.",
+        "developerName": "Samautomation",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://diamondpaintingconverter.com/plugin/",
+        "supportURL": "https://diamondpaintingconverter.com/contact/",
+        "privacyPolicyURL": "https://diamondpaintingconverter.com/plugin/privacy/",
+        "termsOfServiceURL": "https://github.com/smrht/diamondpaintingconverter-agent-plugin/blob/main/LICENSE",
+        "defaultPrompt": [
+          "Welke gekochte patronen staan in mijn account?",
+          "Maak de PDF van mijn gekozen patroon.",
+          "Toon de DMC-legenda van dit patroon."
+        ],
+        "brandColor": "#4338CA",
+        "logo": "./assets/logo.png",
+        "composerIcon": "./assets/logo.png"
+      },
+      "onboardingSkill": "./skills/diamond-painting-converter/SKILL.md",
+      "publication": {
+        "release_notes": "Initial account-scoped release with explicit confirmation and authenticated downloads."
+      }
+    }
+  }
+}
