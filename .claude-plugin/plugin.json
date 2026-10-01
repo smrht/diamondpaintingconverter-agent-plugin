@@ -1,6 +1,6 @@
 {
   "name": "diamond-painting-converter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Find diamond painting patterns already purchased and linked to your account. Check the fixed dimensions, confirm the render and download the pattern PDF with a DMC color legend. The plugin does not purchase products, change designs or process payments.",
   "author": {
     "name": "Samautomation",
@@ -12,10 +12,10 @@
   "license": "MIT",
   "mcpServers": "./.mcp.json",
   "skills": "./skills/",
-  "privacyPolicy": "https://diamondpaintingconverter.com/plugin/privacy/",
-  "support": "https://diamondpaintingconverter.com/contact/",
-  "termsOfService": "https://github.com/smrht/diamondpaintingconverter-agent-plugin/blob/main/LICENSE",
-  "documentation": "https://diamondpaintingconverter.com/plugin/",
+  "privacyPolicyUrl": "https://diamondpaintingconverter.com/plugin/privacy/",
+  "supportUrl": "https://diamondpaintingconverter.com/contact/",
+  "termsOfServiceUrl": "https://github.com/smrht/diamondpaintingconverter-agent-plugin/blob/main/LICENSE",
+  "documentationUrl": "https://diamondpaintingconverter.com/plugin/",
   "keywords": [
     "diamond painting",
     "diamond painting pattern",
