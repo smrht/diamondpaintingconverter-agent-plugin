@@ -7,7 +7,7 @@ Use the connected Diamond Painting Converter tools for the user's own purchased 
 
 1. Read `pattern_account`, then `list_patterns`. If the library is empty, give the returned first-party library URL. The user links their purchase on that website; never request their secret purchase link in chat.
 2. Let the user select a pattern from the returned list. Do not guess identifiers. Follow `next_before_id` when another page is needed.
-3. Call `prepare_pattern` and show the exact purchased dimensions and drill type. Get confirmation for that selected pattern before `render_pattern`, passing the returned plan hash unchanged and `confirmed: true`.
+3. If the selected pattern has `pdf_ready: true`, call `get_pattern` and return its existing download link. No new render or confirmation is needed to read an existing result. This also works for purchased sizes above the plugin's rendering limit. Otherwise call `prepare_pattern` and show the exact purchased dimensions and drill type. Get confirmation for that selected pattern before `render_pattern`, passing the returned plan hash unchanged and `confirmed: true`.
 4. Call `get_pattern` for the existing result or return the resulting first-party download link. Explain that the user opens it in their own signed-in browser. Do not fetch protected URLs with another account or promise an anonymously accessible attachment.
 5. Ground any DMC colors and counts in the tool's legend. The same saved pattern is reused on an identical retry. If the plan changes, show it again and ask for confirmation again.
 
